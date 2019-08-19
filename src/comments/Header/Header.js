@@ -6,10 +6,11 @@ class Header extends Component {
         return (
             <div>
                 <ul>
-                    <li>首页</li>
-                    <li>电影</li>
-                    <li>文章</li>
-                    <li><Link to={"/user/login"}>登录</Link></li>
+                    <li><Link to={"/"}>首页</Link></li>
+                    <li><Link to={"/movie"}>电影</Link></li>
+                    <li><Link to={"/puzzle"}>未接之谜</Link></li>
+                    <li><Link to={"/login"}>登录</Link></li>
+                    <li><Link to={"/registered"}>注册</Link></li>
                 </ul>
             </div>
         );

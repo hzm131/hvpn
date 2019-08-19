@@ -101,7 +101,7 @@ class Api {
     }
 }
 
-const api = new Api('http://192.168.2.219:3000');
+const api = new Api('http://127.0.0.1:3000');
 global.api = api;
 
 export default api

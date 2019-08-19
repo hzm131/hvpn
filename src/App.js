@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import router from './Router/Router'
-
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Header from "./comments/Header/Header";
+import Footer from "./comments/Footer/Footer";
+import router from "./Router/Router";
 
 class App extends Component {
   render() {
     return (
         <Router>
+            <Header />
             {
                 router.map((router,index)=>{
-
                     if(router.exact){
-
                         return <Route exact key={index} path={router.path}
                                       render = {
                                           props =>(
@@ -19,9 +19,7 @@ class App extends Component {
                                           )
                                       }
                         />
-
                     }else{
-
                         return <Route key={index} path={router.path}
                                       render = {
                                           props =>(
@@ -29,11 +27,10 @@ class App extends Component {
                                           )
                                       }
                         />
-
                     }
-
                 })
             }
+            <Footer />
         </Router>
     );
   }

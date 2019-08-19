@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 
-class Content extends Component {
+
+class Puzzle extends Component {
     render() {
         return (
             <div>
-                内容
+                未解之谜
             </div>
         );
     }
 }
 
-export default Content;
+export default Puzzle;
